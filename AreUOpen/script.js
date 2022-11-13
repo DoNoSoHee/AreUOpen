@@ -1,10 +1,10 @@
 var markers = new Array(); // 마커 정보를 담는 배열
 var infoWindows = new Array(); // 정보창을 담는 배열
 
-var marker_icon_default_content = '<img src="./img/gray_icon.png" style="width:60px">';
-var marker_icon_open_content = '<img src="./img/blue_icon.png" style="width:60px">';
-var marker_icon_break_content = '<img src="./img/orange_icon.png" style="width:60px">';
-var marker_icon_close_content = '<img src="./img/red_icon.png" style="width:60px">';
+var marker_icon_default_content = '<img src="./img/gray_icon.png" style="width:30px">';
+var marker_icon_open_content = '<img src="./img/blue_icon.png" style="width:30px">';
+var marker_icon_break_content = '<img src="./img/orange_icon.png" style="width:30px">';
+var marker_icon_close_content = '<img src="./img/red_icon.png" style="width:30px">';
 var marker_icon_selected_content = '<img src="./img/gray_icon.png" style="width:20px">';
 
 var positions = new Array();  // 지역을 담는 배열 ( 지역명/위도경도 )
@@ -28,7 +28,7 @@ var selectedMarker = null;
 var mapContainer = document.getElementById('map'), // 지도를 표시할 div
     mapOption = { 
         center: new naver.maps.LatLng(37.6034, 127.04169), // 지도의 중심좌표
-        level: 3 // 지도의 확대 레벨
+        level: 5 // 지도의 확대 레벨
     };
 var map = new naver.maps.Map(mapContainer, mapOption);
 
