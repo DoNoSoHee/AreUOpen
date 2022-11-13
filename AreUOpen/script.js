@@ -28,7 +28,8 @@ var selectedMarker = null;
 var mapContainer = document.getElementById('map'), // 지도를 표시할 div
     mapOption = { 
         center: new naver.maps.LatLng(37.6034, 127.04169), // 지도의 중심좌표
-        level: 5 // 지도의 확대 레벨
+        //level: 3 // 지도의 확대 레벨
+        zoom : 17
     };
 var map = new naver.maps.Map(mapContainer, mapOption);
 
