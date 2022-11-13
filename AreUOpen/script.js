@@ -4,7 +4,8 @@ var infoWindows = new Array(); // 정보창을 담는 배열
 var marker_icon_default_content = '<img src="./img/gray_icon.png" style="width:30px">';
 var marker_icon_open_content = '<img src="./img/blue_icon.png" style="width:30px">';
 var marker_icon_break_content = '<img src="./img/orange_icon.png" style="width:30px">';
-var marker_icon_close_content = '<img src="./img/red_icon.png" style="width:30px">';   //이름 바꿔야함 선택된 애들 아이콘 색도 바꿔야함
+var marker_icon_close_content = '<img src="./img/red_icon.png" style="width:30px">';
+var marker_icon_selected_content = '<img src="./img/gray_icon.png" style="width:20px">';
 
 var positions = new Array();  // 지역을 담는 배열 ( 지역명/위도경도 )
 
@@ -60,7 +61,9 @@ for (var i = 0; i < positions.length; i++) {
     markers.push(marker); // 생성한 마커를 배열에 담는다.
     infoWindows.push(infoWindow); // 생성한 정보창을 배열에 담는다.
 }	
-
+function showMarkers() {
+    setMarkers(map)    
+}
 function getClickHandler(seq) {
 		
     return function(e) {  // 마커를 클릭하는 부분
@@ -69,15 +72,10 @@ function getClickHandler(seq) {
         
         if (infoWindow.getMap()) {
             infoWindow.close();
-            changeMarker(marker, null);
+            // changeMarkerBack(marker);
         } else {
             infoWindow.open(map, marker); // 표출
-            for(var i=0; i<markers.length;i++){ //클릭한 마커 제외 다 없애기
-                if(seq != i) {
-                    changeMarker(markers[i],marker);
-                }
-            }
-            
+            // changeMarkerSmall(marker);
         }
         
     }
@@ -86,25 +84,26 @@ function getClickHandler(seq) {
 for (var i=0; i<markers.length; i++) {
     naver.maps.Event.addListener(markers[i], 'click', getClickHandler(i)); // 클릭한 마커 핸들러
 }
-
-function changeMarker(prev_marker, marker) {
-    if (prev_marker != undefined) {
-        prev_marker.setIcon({
-            content : marker_icon_default_content,
-            size: new naver.maps.Size(22, 35),
-            origin: new naver.maps.Point(0, 0),
-            anchor: new naver.maps.Point(11, 35),
-            scaledSize : new naver.maps.Size(22, 35)
-        })
-    }
-    marker.setIcon({
-        content : marker_icon_close_content,
-        size: new naver.maps.Size(22, 35),
-        origin: new naver.maps.Point(0, 0),
-        anchor: new naver.maps.Point(11, 35),
-        scaledSize : new naver.maps.Size(22, 35)
-    });
-}
+// var origin_icon = null;
+// function changeMarkerSmall(marker) {
+//     origin_icon = marker.c
+//     marker.setIcon({
+//         content : marker_icon_selected_content,
+//         size: new naver.maps.Size(22, 35),
+//         origin: new naver.maps.Point(0, 0),
+//         anchor: new naver.maps.Point(11, 35),
+//         scaledSize : new naver.maps.Size(22, 35)
+//     });
+// }
+// function changeMarkerBack(marker) {
+//     marker.setIcon({
+//         content : origin_icon,
+//         size: new naver.maps.Size(22, 35),
+//         origin: new naver.maps.Point(0, 0),
+//         anchor: new naver.maps.Point(11, 35),
+//         scaledSize : new naver.maps.Size(22, 35)
+//     });
+// }
 
 var opens = new Array(); //오픈한 식당
 var closes = new Array(); //닫은 식당
@@ -136,6 +135,7 @@ function ChangeValue(){
                 anchor: new naver.maps.Point(11, 35),
                 scaledSize : new naver.maps.Size(22, 35)
             })
+            markers.push(markers[i]); //바뀐 마커 저장
          } 
          //휴무일 아닌 애들
          else if( selectedH < openH) { 
@@ -147,6 +147,7 @@ function ChangeValue(){
                 anchor: new naver.maps.Point(11, 35),
                 scaledSize : new naver.maps.Size(22, 35)
             })
+            markers.push(markers[i]); //바뀐 마커 저장
          } else if( selectedH == openH && selectedM < openM ) { 
              //오픈시간보다 같은데 오픈 분보다 작으면
              markers[i].setIcon({
@@ -156,6 +157,7 @@ function ChangeValue(){
                 anchor: new naver.maps.Point(11, 35),
                 scaledSize : new naver.maps.Size(22, 35)
             })
+            markers.push(markers[i]); //바뀐 마커 저장
          } else if( selectedH > breakOH && selectedH < breakCH) {
              //브레이크 시작보다 크고 브레이크 끝보다 작으면
              markers[i].setIcon({
@@ -165,6 +167,7 @@ function ChangeValue(){
                 anchor: new naver.maps.Point(11, 35),
                 scaledSize : new naver.maps.Size(22, 35)
             })
+            markers.push(markers[i]); //바뀐 마커 저장
          } else if( selectedH == breakOH && selectedM >= breakOM) {
              //브레이크 시작이랑 같은데 분이 크면
              markers[i].setIcon({
@@ -174,6 +177,7 @@ function ChangeValue(){
                 anchor: new naver.maps.Point(11, 35),
                 scaledSize : new naver.maps.Size(22, 35)
             })
+            markers.push(markers[i]); //바뀐 마커 저장
          } else if( selectedH == breakCH && selectedM < breakCM) {
              //브레이크 끝이랑 같은데 분이 작으면
              markers[i].setIcon({
@@ -183,6 +187,7 @@ function ChangeValue(){
                 anchor: new naver.maps.Point(11, 35),
                 scaledSize : new naver.maps.Size(22, 35)
             })
+            markers.push(markers[i]); //바뀐 마커 저장
          } else if( selectedH > closeH) {
              //끝나는 시간보다 크면
              markers[i].setIcon({
@@ -192,6 +197,7 @@ function ChangeValue(){
                 anchor: new naver.maps.Point(11, 35),
                 scaledSize : new naver.maps.Size(22, 35)
             })
+            markers.push(markers[i]); //바뀐 마커 저장
          } else if( selectedH == closeH && selectedM >= closeM) {
              //끝나는 시간보다 작거나 같은데 끝나는 분보다 같거나 크면
              markers[i].setIcon({
@@ -201,6 +207,7 @@ function ChangeValue(){
                 anchor: new naver.maps.Point(11, 35),
                 scaledSize : new naver.maps.Size(22, 35)
             })
+            markers.push(markers[i]); //바뀐 마커 저장
          } else{ //다 아니면 보이게
              markers[i].setIcon({
                 content : marker_icon_open_content,
@@ -209,10 +216,11 @@ function ChangeValue(){
                 anchor: new naver.maps.Point(11, 35),
                 scaledSize : new naver.maps.Size(22, 35)
             })
+            markers.push(markers[i]); //바뀐 마커 저장
          }
     }
     
-    
+    return markers;
  }
 
  
