@@ -11,5 +11,6 @@ positions.push(
     { "title":"연이네 과자점",  foodtype: "카페, 디저트", closeD:"Sat", openH:"11", openM:"00", break:false, closeH:"20", closeM:"00" ,latlng: new naver.maps.LatLng(37.603879, 127.041563) }
 //    { "title": '핏짜피자',  foodtype: "피자",closeD: "null", openH:"11", openM:"00", breakOH:"15", breakOM:"30", breakCH:"17", breakCM:"00" ,closeH:"21", closeM:"30" , latlng: new naver.maps.LatLng(37.6037559, 127.0420138) },
 //    { "title": '샐러디',   foodtype: "샐러드", closeD:"null", openH:"08", openM:"30", openH2:"10", openM2:"0", breakOH:"null", breakOM:"null", breakCH:"null" ,breakCM:"null" ,closeH:"21", closeM:"00", closeH2:"2", closeM:"00" , latlng: new naver.maps.LatLng(37.6041401,127.0428911) }
+
 );
 
