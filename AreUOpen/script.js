@@ -1,10 +1,10 @@
 var markers = new Array(); // 마커 정보를 담는 배열
 var infoWindows = new Array(); // 정보창을 담는 배열
 
-var marker_icon_default_content = '<img src="./img/gray_icon.png" style="width:30px">';
-var marker_icon_open_content = '<img src="./img/blue_icon.png" style="width:30px">';
-var marker_icon_break_content = '<img src="./img/orange_icon.png" style="width:30px">';
-var marker_icon_close_content = '<img src="./img/red_icon.png" style="width:30px">';
+var marker_icon_default_content = '<img src="./img/gray_icon.png" style="width:40px">';
+var marker_icon_open_content = '<img src="./img/blue_icon.png" style="width:40px">';
+var marker_icon_break_content = '<img src="./img/orange_icon.png" style="width:40px">';
+var marker_icon_close_content = '<img src="./img/red_icon.png" style="width:40px">';
 var marker_icon_selected_content = '<img src="./img/gray_icon.png" style="width:20px">';
 
 var positions = new Array();  // 지역을 담는 배열 ( 지역명/위도경도 )
