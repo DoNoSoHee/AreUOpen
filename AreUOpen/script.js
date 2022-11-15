@@ -11,16 +11,38 @@ var positions = new Array();  // 지역을 담는 배열 ( 지역명/위도경�
 
 positions.push(
     //{ "title": '제나키친', foodtype: "한식" , closeD: "Sat", openH:"11", openM:"00", closeH:"20", closeM:"00", breakOH:"15", breakOM:"00", breakCH:"17", breakCM:"30", latlng: new naver.maps.LatLng(37.6034, 127.04169) },
-    { "title":"조아버거",  foodtype: "햄버거", closeD: "Sun", openH:"11", openM:"00", closeH:"20", closeM:"00", break:false, latlng: new naver.maps.LatLng(37.6039015, 127.0408758) },
+     { "title":"조아버거",  foodtype: "햄버거", closeD: "Sun", openH:"11", openM:"00", closeH:"20", closeM:"00", break:false, latlng: new naver.maps.LatLng(37.6039015, 127.0408758) },
     { "title": '송송식탁', foodtype: "한식",  closeD: "Sun", openH:"11", openM:"00", closeH:"21", closeM:"00", break:true, breakOH:"15", breakOM:"00", breakCH:"17", breakCM:"00", latlng: new naver.maps.LatLng(37.6038977, 127.0427576) },
-    { "title": '스시빈',  foodtype: "초밥/롤",closeD: "Sun", openH:"11", openM:"30", closeH:"22", closeM:"00", break:true, breakOH:"15", breakOM:"00", breakCH:"17", breakCM:"00", latlng: new naver.maps.LatLng(37.60385, 127.0433) },
-    { "title": '백소정',   foodtype: "일식당",closeD:"null", openH:"11", openM:"00", break:true, breakOH:"15", breakOM:"00",  breakCH:"17", breakCM:"00" ,closeH:"21", closeM:"00" , latlng: new naver.maps.LatLng(37.6028850, 127.0412987)},
+    { "title": '스시빈',  foodtype: "일식",closeD: "Sun", openH:"11", openM:"30", closeH:"22", closeM:"00", break:true, breakOH:"15", breakOM:"00", breakCH:"17", breakCM:"00", latlng: new naver.maps.LatLng(37.60385, 127.0433) },
+    { "title": '백소정',   foodtype: "일식",closeD:"null", openH:"11", openM:"00", break:true, breakOH:"15", breakOM:"00",  breakCH:"17", breakCM:"00" ,closeH:"21", closeM:"00" , latlng: new naver.maps.LatLng(37.6028850, 127.0412987)},
     { "title":"서브웨이",  foodtype: "샌드위치", closeD:"null", openH:"08", openM:"00", break:false ,closeH:"22", closeM:"00" ,latlng: new naver.maps.LatLng(37.60384, 127.04272) },
     { "title":"밥은화",  foodtype: "한식", closeD:"Sun", openH:"11", openM:"30", break:false, closeH:"20", closeM:"30" ,latlng: new naver.maps.LatLng(37.605748, 127.044525) },
-    { "title":"연이네 과자점",  foodtype: "카페, 디저트", closeD:"Sat", openH:"11", openM:"00", break:false, closeH:"20", closeM:"00" ,latlng: new naver.maps.LatLng(37.603879, 127.041563) }
-//    { "title": '핏짜피자',  foodtype: "피자",closeD: "null", openH:"11", openM:"00", breakOH:"15", breakOM:"30", breakCH:"17", breakCM:"00" ,closeH:"21", closeM:"30" , latlng: new naver.maps.LatLng(37.6037559, 127.0420138) },
-//    { "title": '샐러디',   foodtype: "샐러드", closeD:"null", openH:"08", openM:"30", openH2:"10", openM2:"0", breakOH:"null", breakOM:"null", breakCH:"null" ,breakCM:"null" ,closeH:"21", closeM:"00", closeH2:"2", closeM:"00" , latlng: new naver.maps.LatLng(37.6041401,127.0428911) }
-);
+    { "title":"연이네 과자점",  foodtype: "카페, 디저트", closeD:"Sat", openH:"11", openM:"00", break:false, closeH:"20", closeM:"00" ,latlng: new naver.maps.LatLng(37.603879, 127.041563) },
+    { "title":" 돈가스명가",  foodtype: " 일식", closeD: " null", openH:" 11", openM:"00", closeH:"21 ", closeM:"00 ", break:false, latlng: new naver.maps.LatLng( 37.6052135, 127.0446544)},
+    { "title":"신축산식당 ",  foodtype: " 육류", closeD: "Sun ", openH:" 11", openM:"30", closeH:" 22", closeM:"00 ", break:false, latlng: new naver.maps.LatLng(37.6051346 ,127.0384570 )},
+    { "title":" 하이데어",  foodtype: " 샌드위치", closeD: " Sun", openH:"10 ", openM:"00", closeH:" 20", closeM:"00 ", break:false, latlng: new naver.maps.LatLng( 37.6048373, 127.0439574)},
+    { "title":" 바이트미",  foodtype: "샌드위치 ", closeD: "null ", openH:" 10", openM:"00", closeH:" 22", closeM:"00 ", break:false, latlng: new naver.maps.LatLng( 37.6068837, 127.0461840)},
+    { "title":" 화덕과베토벤",  foodtype: " 피자", closeD: "nul ", openH:"10 ", openM:"00", closeH:"22 ", closeM:" 00", break:false, latlng: new naver.maps.LatLng( 37.6057333, 127.0447981)},
+    { "title":" DA피자",  foodtype: " 피자", closeD: "null ", openH:"11 ", openM:"00", closeH:" 23", closeM:" 00", break:false, latlng: new naver.maps.LatLng(37.6053212 , 127.0416806)},
+    { "title":"원조멸치국수 ",  foodtype: "한식 ", closeD: "null ", openH:"00 ", openM:"00", closeH:"24 ", closeM:"00 ", break:false, latlng: new naver.maps.LatLng(37.6024144 ,127.0421996 )},
+    { "title":" 김만희떡볶이",  foodtype: "분식 ", closeD: " Sun", openH:"12 ", openM:"00", closeH:"22 ", closeM:"00 ", break:false, latlng: new naver.maps.LatLng( 37.6042639 ,127.0399216 )},
+    { "title":" 밥앤죽",  foodtype: " 한식", closeD: " Sat", openH:" 10", openM:"30", closeH:" 21", closeM:"00 ", break:false, latlng: new naver.maps.LatLng(37.6040962 , 127.0427116)},
+    { "title":" 오매떡",  foodtype: "분식", closeD: " Sat", openH:" 11", openM:"00", closeH:"23 ", closeM:" 00", break:false, latlng: new naver.maps.LatLng(37.6046034 , 127.0422940)},
+    { "title":" 아라부대찌개",  foodtype: " 한식", closeD: "null ", openH:"11 ", openM:"00", closeH:" 21", closeM:"00 ", break:false, latlng: new naver.maps.LatLng(37.6037559 ,37.6037559 )},
+    { "title":" 국수나무",  foodtype: " 한식", closeD: "Sun ", openH:" 10", openM:"30", closeH:" 20", closeM:" 00", break:false, latlng: new naver.maps.LatLng(37.6037559 ,37.6037559 )},
+    { "title":" 유메노카츠",  foodtype: " 일식", closeD: " Sun", openH:"11 ", openM:"00", closeH:"21 ", closeM:" 00", break:false, latlng: new naver.maps.LatLng(37.6029312 ,127.0428020 )},
+    { "title":" 윤가네",  foodtype: " 한식", closeD: " null", openH:" 7", openM:"00", closeH:" 21", closeM:" 00", break:false, latlng: new naver.maps.LatLng(37.6051431 ,127.0417973 )},
+    { "title":" 사보르김밥",  foodtype: "분식 ", closeD: " null", openH:"5 ", openM:"00", closeH:"24 ", closeM:"00 ", break:false, latlng: new naver.maps.LatLng( 37.6037438,127.0428396 )},
+    { "title":" 고봉민김밥",  foodtype: " 분식", closeD: " null", openH:" 8", openM:"00", closeH:" 21", closeM:" 00", break:false, latlng: new naver.maps.LatLng( 127.0428396, 127.0415961)},
+    { "title":" 지지고",  foodtype: "한식", closeD: "Sun ", openH:" 10", openM:"00", closeH:" 19", closeM:" 50", break:false, latlng: new naver.maps.LatLng( 37.6043268,127.0425190 )},
+    { "title":" 공복식당",  foodtype: "육류", closeD: " Sun", openH:" 17", openM:"00", closeH:" 22", closeM:" 30", break:false, latlng: new naver.maps.LatLng(37.6060685 ,127.0448854 )},
+    { "title":" 청년고기장수",  foodtype: "육류 ", closeD: "Sun", openH:"12 ", openM:"00", closeH:"22 ", closeM:"00 ", break:false, latlng: new naver.maps.LatLng(37.6031973 ,37.6031973 )},
+    { "title":" 피클",  foodtype: " 양식", closeD: " Sat", openH:"11 ", openM:"00", closeH:" 21", closeM:" 00", break:false, latlng: new naver.maps.LatLng(37.6047844 , 127.0432505)},
+    { "title":" 88제육",  foodtype: "육류", closeD: " null", openH:" 10", openM:"00", closeH:" 22", closeM:" 00", break:false, latlng: new naver.maps.LatLng(37.6046034 ,127.0422940)},
+    { "title":" 홍곱창",  foodtype: " 육류", closeD: " Sun", openH:"15 ", openM:"00", closeH:" 1", closeM:"00 ", break:false, latlng: new naver.maps.LatLng(37.6039478,127.0392785 )},
+    { "title":" 스페셜리",  foodtype: " 양식", closeD: "Sun ", openH:"11 ", openM:"00", closeH:"21 ", closeM:"00 ", break:false, latlng: new naver.maps.LatLng(37.6075901 ,37.6075901 )}
+    
+)
 
 var selectedMarker = null;
 
@@ -53,8 +75,8 @@ for (var i = 0; i < positions.length; i++) {
     var infoWindow = new naver.maps.InfoWindow({
         content: 
     '   <div style="width:200px;text-align:center;padding:10px;">'
-    +'      <strong>' + positions[i].title + '</strong><br/>'
-    +'      <b>'+positions[i].foodtype+'<b>'+ '<br>' 
+    +'     <p style="color: #6F263D">  <strong>  ' + positions[i].title + '</strong></p>'
+    +'      <p style="font-size:15px">'+positions[i].foodtype+'</p>'+
     +       positions[i].openH + ':'+ positions[i].openM + '~'+positions[i].closeH +":" +positions[i].closeM
     +'  </div>'
     }); // 클릭했을 때 띄워줄 정보 HTML 작성
