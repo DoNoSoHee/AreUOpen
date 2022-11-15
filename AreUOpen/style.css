@@ -28,6 +28,9 @@ header{
     font-family: 'GangwonEduPowerExtraBoldA';
     /* font-family: 'RixInooAriDuriR'; */
 }
+a{
+    color: #f5f5dc;
+}
 header p {
     margin-top: 10px;
     font-size: 60px;
