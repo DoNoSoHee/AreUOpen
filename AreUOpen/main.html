@@ -10,70 +10,65 @@
     </head>
     <body>
         <header>
-          <p>
-            <br>동식이</p>
+          <p>동식이</p>
+        
+          <div id="infomation">
+            <div id="markerimg">
+              <img class="menu" src="./img/gray_icon.png">오픈 전
+              <img class="menu" src ="./img/blue_icon.png">오픈
+              <img class="menu"  src="./img/orange_icon.png">브레이크
+              <img class="menu"  src="./img/red_icon.png">닫음
+            </div>
+            <span id="select">
+              <form id="right">
+                <select id="day" onchange="ChangeValue()">
+                  <option value="Mon">월</option>
+                  <option value="Tue">화</option>
+                  <option value="Wed">수</option>
+                  <option value="Thu">목</option>
+                  <option value="Fri">금</option>
+                  <option value="Sat">토</option>
+                  <option value="Sun">일</option>
+                </select> 
+                <select name="hour" id="hour" onchange="ChangeValue()">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                  <option value="13">13</option>
+                  <option value="14">14</option>
+                  <option value="15">15</option>
+                  <option value="16">16</option>
+                  <option value="17">17</option>
+                  <option value="18">18</option>
+                  <option value="19">19</option>
+                  <option value="20">20</option>
+                  <option value="21">21</option>
+                  <option value="22">22</option>
+                  <option value="23">23</option>
+                  <option value="24">24</option>
+                </select>
+                <a>:</a>
+                <select name="min" id="min" onchange="ChangeValue()">
+                  <option value="00">00</option>
+                  <option value="10">10</option>
+                  <option value="20">20</option>
+                  <option value="30">30</option>
+                  <option value="40">40</option>
+                  <option value="50">50</option>  
+                </select>
+              </form>
+            </span>
+          </div>
         </header>
-        <nav id="infomation">
-          <span id="left">
-            <span id=gray> 
-              <img class="menu" src="./img/gray_icon.png">오픈 전</span>
-            <span id=blue> 
-              <img class="menu" src ="./img/blue_icon.png">오픈</span>
-            <span id=orange> 
-              <img class="menu"  src="./img/orange_icon.png">브레이크</span>
-            <span id=red> 
-              <img class="menu"  src="./img/red_icon.png">닫음</span>
-          </span>
-          <span>
-            <form id="right">
-              <select id="day" onchange="ChangeValue()">
-                <option value="Mon">월</option>
-                <option value="Tue">화</option>
-                <option value="Wed">수</option>
-                <option value="Thu">목</option>
-                <option value="Fri">금</option>
-                <option value="Sat">토</option>
-                <option value="Sun">일</option>
-              </select> 
-              <select name="hour" id="hour" onchange="ChangeValue()">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-                <option value="10">10</option>
-                <option value="11">11</option>
-                <option value="12">12</option>
-                <option value="13">13</option>
-                <option value="14">14</option>
-                <option value="15">15</option>
-                <option value="16">16</option>
-                <option value="17">17</option>
-                <option value="18">18</option>
-                <option value="19">19</option>
-                <option value="20">20</option>
-                <option value="21">21</option>
-                <option value="22">22</option>
-                <option value="23">23</option>
-                <option value="24">24</option>
-              </select>
-              <a>:</a>
-              <select name="min" id="min" onchange="ChangeValue()">
-                <option value="00">00</option>
-                <option value="10">10</option>
-                <option value="20">20</option>
-                <option value="30">30</option>
-                <option value="40">40</option>
-                <option value="50">50</option>  
-              </select>
-  
-            </form>
-          </span>
-        </nav>
         <div id="map">
           <script type="text/javascript" src="script.js"></script>
         </div>
