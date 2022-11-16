@@ -15,7 +15,6 @@
     margin: 0;
 }
 html, body {
-    font-size: 62.5%;
     width: 100%;
     height: 100%;
     background-color: #6F263D;
@@ -24,7 +23,7 @@ html, body {
 }
 
 img.menu{
-    width:2%;
+    width:4%;
 }
 select{
     background-color: #f5f5dc;
@@ -44,7 +43,8 @@ select{
 }
 header{
     height: 15%;
-    margin: 2.5%;
+    margin: 5%;
+    /* margin-bottom: 2%; */
     background-color: #6F263D;
     color: #f5f5dc;
     font-family: 'GangwonEduPowerExtraBoldA';
@@ -53,17 +53,20 @@ header{
 #map {
     margin: 2.5%;
     width: 95%;
-    height: 80%;
+    height: 75%;
 }
-#right{
+#sel{
     /* padding-top: 5%; */
     width: 100%;
+    height: 30%;
 }
-#middle{
+#menu{
     width: 100%;
+    height: 40%;
 }
 #name{
     width: 100%;
+    height: 30%;
     font-size: 50px;
 }
 /* 반응형 */
