@@ -28,6 +28,11 @@ header{
     font-family: 'GangwonEduPowerExtraBoldA';
     /* font-family: 'RixInooAriDuriR'; */
 }
+@media (max-width: 600px) {
+    header {
+        height: 30%;
+    }
+  }
 #map {
     width: 95%;
     height: 75%;
@@ -50,32 +55,35 @@ select{
     cursor: pointer;
 }
 #right{
-    padding-top: 5%;
-    width: 50%;
+    /* padding-top: 5%; */
+    width: 100%;
 }
-@media (min-width: 600px) {
-    #right {
-        display: inline-block;
-        width: 30%;
+#middle{
+    width: 100%;
+}
+#name{
+    display: inline-block;
+    font-size: 80px;
+    width: 30%;
+    padding-top: 5%;
+}
+/* 반응형 */
+@media (max-width: 600px) {
+    #name {
+        font-size: 40px;
+        width: 50%;
+    }
+    #map {
+        height: 65%;
     }
   }
-#middle{
-    width: 50%;
-}
 @media (min-width: 600px) {
     #middle {
         display: inline-block;
         width: 30%;
     }
-  }
-#name{
-    display: inline-block;
-    font-size: 80px;
-    width: 30%;
-}
-@media (max-width: 600px) {
-    #name {
-        font-size: 50px;
-        width: 50%;
+    #right {
+        display: inline-block;
+        width: 30%;
     }
   }
