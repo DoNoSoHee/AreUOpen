@@ -44,7 +44,7 @@ header p {
     margin : 2.5%
 }
 nav{
-   margin-bottom: 0px;
+    height:10%;
 }
 img.menu{
     width:30px;
@@ -61,8 +61,9 @@ select{
     margin: 4px 2px;
     cursor: pointer;
 }
-#background{
-	background-color:#6F263D;
+#right{
+    float:right;
+    background-color:blue;
     color: white;
 	width: 100px;
 	height: 0px;
@@ -71,6 +72,17 @@ select{
 	padding-left: auto;
 	padding-top: auto;
 }
-#color{
-    background-color: #6F263D;
+#left{
+    float:left;
+	background-color:blue;
+    color: white;
+	width: 100px;
+	height: 0px;
+	border-radius: 10px;
+	box-sizing: border-box;
+	padding-left: auto;
+	padding-top: auto;
+}
+#infomation{
+    background-color: red;
 }
