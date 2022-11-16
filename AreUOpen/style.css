@@ -18,26 +18,9 @@ html, body {
     width: 100%;
     height: 100%;
     background-color: #6F263D;
+    text-align: center;
 }
-header{
-    width: 100%;
-    height: 20%;
-    text-align:center;
-    background-color: #6F263D;
-    color: #f5f5dc;
-    font-family: 'GangwonEduPowerExtraBoldA';
-    /* font-family: 'RixInooAriDuriR'; */
-}
-@media (max-width: 600px) {
-    header {
-        height: 30%;
-    }
-  }
-#map {
-    width: 95%;
-    height: 75%;
-    margin : 2.5%
-}
+
 img.menu{
     width:30px;
 }
@@ -45,14 +28,31 @@ select{
     background-color: #f5f5dc;
     border: none;
     color: black;
-    padding: 10px 30px;
+    /* padding: 10px 30px; */
+    /* padding: 1%;
+    margin: 1%; */
+    width: 10%;
+    height: 25px;
+    margin: 1%;
     text-align: center;
     text-decoration: none;
     border-radius: 10px;
     display: inline-block;
     font-size: 16px;
-    margin: 4px 2px;
     cursor: pointer;
+}
+header{
+    height: 15%;
+    margin: 2.5%;
+    background-color: #6F263D;
+    color: #f5f5dc;
+    font-family: 'GangwonEduPowerExtraBoldA';
+    /* font-family: 'RixInooAriDuriR'; */
+}
+#map {
+    margin: 2.5%;
+    width: 95%;
+    height: 80%;
 }
 #right{
     /* padding-top: 5%; */
@@ -62,28 +62,17 @@ select{
     width: 100%;
 }
 #name{
-    display: inline-block;
-    font-size: 80px;
-    width: 30%;
-    padding-top: 5%;
+    width: 100%;
+    font-size: 30px;
 }
 /* 반응형 */
-@media (max-width: 800px) {
-    #name {
-        font-size: 40px;
-        width: 50%;
-    }
-    #map {
-        height: 65%;
-    }
-  }
-@media (min-width: 800px) {
-    #middle {
+@media (min-width: 500px) {
+    /* #middle {
         display: inline-block;
         width: 30%;
     }
     #right {
         display: inline-block;
         width: 30%;
-    }
+    } */
   }
