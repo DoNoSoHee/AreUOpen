@@ -41,7 +41,13 @@ positions.push(
     { "title":"88제육",  foodtype: "육류", closeD: "null", openH:" 10", openM:"00", closeH:" 22", closeM:" 00", break:false, latlng: new naver.maps.LatLng(37.6046034 ,127.0422940)},
     { "title":"홍곱창",  foodtype: " 육류", closeD: "Sun", openH:"15 ", openM:"00", closeH:" 1", closeM:"00 ", break:false, latlng: new naver.maps.LatLng(37.6039478,127.0392785 )},
     { "title":"스페셜리",  foodtype: " 양식", closeD: "Sun", openH:"11 ", openM:"00", closeH:"21 ", closeM:"00 ", break:false, latlng: new naver.maps.LatLng(37.6075901 ,37.6075901 )}
-    
+    { "title":"누들아한타이",  foodtype: "태국음식", closeD: "Sun", openH:"10", openM:"30", closeH:"21 ", closeM:"00 ", breakOH:"15", breakOM:"00", breakCH:"17", breakCM:"00", latlng: new naver.maps.LatLng(37.6038977,127.0427576)},
+    { "title":"토라카츠",  foodtype: "돈가스", closeD: "Sun", openH:"11", openM:"30", closeH:"20", closeM:"30 ", breakOH:"14", breakOM:"30", breakCH:"17", breakCM:"30", latlng: new naver.maps.LatLng(37.6050394,127.0437699)},
+    { "title":"토리돈까스",  foodtype: "돈가스", closeD: "Sun", openH:"11", openM:"30", closeH:"20", closeM:"00 ", breakOH:"15", breakOM:"00", breakCH:"17", breakCM:"00", latlng: new naver.maps.LatLng(37.6031973,127.0337784)},
+    { "title":"춘리마라탕",  foodtype: "중식당", closeD: "Sun", openH:"11", openM:"30", closeH:"20", closeM:"00 ", breakOH:"15", breakOM:"00", breakCH:"17", breakCM:"00", latlng: new naver.maps.LatLng(37.6028943,127.0416767)},
+    { "title":"착한짬뽕 더 착한 탕수육",  foodtype: "중식당", closeD: "Sun", openH:"11", openM:"30", closeH:"21", closeM:"00 ", breakOH:"15", breakOM:"00", breakCH:"17", breakCM:"00", latlng: new naver.maps.LatLng(37.6016044,127.0417699)},
+    { "title":"미소야",  foodtype: "돈가스", closeD: "Sun", openH:"11", openM:"00", closeH:"21", closeM:"00 ", breakOH:"15", breakOM:"30", breakCH:"17", breakCM:"30", latlng: new naver.maps.LatLng(37.6032943,127.0421427)},
+    { "title":"남매부대찌개",  foodtype: "피자", closeD:null, openH:"10", openM:"10", closeH:"21", closeM:"00 ", breakOH:"15", breakOM:"30", breakCH:"16", breakCM:"30", latlng: new naver.maps.LatLng(37.6036836,127.0418607)}
 )
 
 //현재 요일/시간/분 구하기
