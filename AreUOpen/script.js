@@ -46,7 +46,7 @@ positions.push(
     { "title":"토리돈까스",  foodtype: "돈가스", closeD: "Sun", openH:"11", openM:"30", closeH:"20", closeM:"00", breakOH:"15", breakOM:"00", breakCH:"17", breakCM:"00", latlng: new naver.maps.LatLng(37.6045203,127.0423433)},
     { "title":"춘리마라탕",  foodtype: "중식당", closeD: "Sun", openH:"11", openM:"30", closeH:"20", closeM:"00", breakOH:"15", breakOM:"00", breakCH:"17", breakCM:"00", latlng: new naver.maps.LatLng(37.6028943,127.0416767)},
     { "title":"착한짬뽕 더 착한 탕수육",  foodtype: "중식당", closeD: "Sun", openH:"11", openM:"30", closeH:"21", closeM:"00 ", breakOH:"15", breakOM:"00", breakCH:"17", breakCM:"00", latlng: new naver.maps.LatLng(37.6016044,127.0417699)},
-    { "title":"미소야",  foodtype: "돈가스", closeD: "Sun", openH:"11", openM:"00", closeH:"21", closeM:"00", breakOH:"15", breakOM:"30", breakCH:"17", breakCM:"30", latlng: new naver.maps.LatLng(37.6032943,127.0421427)},
+    { "title":"미소야",  foodtype: "돈가스", closeD: "Sun", openH:"11", openM:"00", closeH:"21", closeM:"00", breakOH:"15", breakOM:"30", breakCH:"16", breakCM:"30", latlng: new naver.maps.LatLng(37.6032943,127.0421427)},
     { "title":"남매부대찌개",  foodtype: "피자", closeD:null, openH:"10", openM:"10", closeH:"21", closeM:"00", breakOH:"15", breakOM:"30", breakCH:"16", breakCM:"30", latlng: new naver.maps.LatLng(37.6036836,127.0418607)}
 )
 
