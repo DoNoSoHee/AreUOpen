@@ -62,7 +62,7 @@ header{
 }
 #name{
     width: 100%;
-    font-size: 30px;
+    font-size: 50px;
 }
 /* 반응형 */
 @media (min-width: 500px) {
