@@ -2,6 +2,7 @@
 <html>
   <!-- 주석 -->
     <head>
+      <meta name="viewport" content="width=device-width, initial-scale=5.0">
       <link rel="stylesheet" href="style.css">
       <script src="../jquery-3.6.0.js"></script>
       <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=j9isu8znpj"></script>
@@ -12,8 +13,8 @@
           <p>
             <br>동식이</p>
         </header>
-        <nav id="color">
-          <span id="background">
+        <nav id="infomation">
+          <span id="left">
             <span id=gray> 
               <img class="menu" src="./img/gray_icon.png">오픈 전</span>
             <span id=blue> 
@@ -24,7 +25,7 @@
               <img class="menu"  src="./img/red_icon.png">닫음</span>
           </span>
           <span>
-            <form>
+            <form id="right">
               <select id="day" onchange="ChangeValue()">
                 <option value="Mon">월</option>
                 <option value="Tue">화</option>
