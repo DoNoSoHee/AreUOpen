@@ -4,6 +4,7 @@
     <head>
       <link rel="stylesheet" href="style.css">
       <script src="../jquery-3.6.0.js"></script>
+      <script type="text/javascript" src="time.js"></script>
       <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=j9isu8znpj"></script>
       <title>동식이</title>
     </head>
@@ -17,10 +18,9 @@
               <img class="menu"  src="./img/orange_icon.png">브레이크
               
           </div>
-  
           <div id="sel">
             <form >
-              <select id="day" style="font-family: 'GangwonEduPowerExtraBoldA';font-size: 200%;" name="day" onchange="ChangeValue()">
+              <select id="day" name="day" onchange="ChangeValue()">
                 <option value="Mon">월요일</option>
                 <option value="Tue">화요일</option>
                 <option value="Wed">수요일</option>
@@ -29,7 +29,7 @@
                 <option value="Sat">토요일</option>
                 <option value="Sun">일요일</option>
               </select> 
-              <select style="font-family: 'GangwonEduPowerExtraBoldA';font-size: 200%;" name="hour" id="hour" onchange="ChangeValue()">
+              <select name="hour" id="hour" onchange="ChangeValue()">
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -56,7 +56,7 @@
                 <option value="24">24</option>
               </select>
               <a>:</a>
-              <select style="font-family: 'GangwonEduPowerExtraBoldA';font-size: 200%;" name="min" id="min" onchange="ChangeValue()">
+              <select name="min" id="min" onchange="ChangeValue()">
                 <option value="00">00</option>
                 <option value="10">10</option>
                 <option value="20">20</option>
