@@ -19,7 +19,6 @@ html, body {
     height: 100%;
     background-color: #6F263D;
     text-align: center;
-    -webkit-text-size-adjust : none;
 }
 
 img.menu{
@@ -91,7 +90,6 @@ header{
         display: inline-block;
         width: 30%;
         height: 100%;
-        
     }
     select{
         background-color: #f5f5dc;
@@ -99,7 +97,7 @@ header{
         color: #6F263D;
         width: 20%;
         height: 80px;
-        padding: 1%;
+        padding-left: 1%;
         vertical-align: center;
         text-align: center;
         text-decoration: none;
@@ -113,5 +111,15 @@ header{
     }
     img.menu{
         width:5%;
+    }
+    #map{
+        margin: 2.5%;
+        width: 95%;
+        height: 70%;
+    }
+    header{
+        height: 15%;
+        margin: 0; 
+        padding-top: 2.5%;
     }
   }
