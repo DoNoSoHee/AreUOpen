@@ -32,7 +32,7 @@ select{
     /* padding: 20px 20px; */
     /* padding: 10%;
     margin: 1%; */
-    width: 15%;
+    width: 13%;
     height: 80px;
     text-align: center;
     text-decoration: none;
@@ -40,6 +40,9 @@ select{
     display: inline-block;
     font-size: 16px;
     cursor: pointer;
+}
+select#day{
+    width: 20%;
 }
 header{
     height: 15%;
