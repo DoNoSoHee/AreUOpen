@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'RixInooAriDuriR';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2207-01@1.0/RixInooAriDuriR.woff2') format('woff2');
-    font-weight: normal;
+    font-weight: lighter;
     font-style: normal;
 }
 @font-face {
@@ -26,6 +26,7 @@ img.menu{
     width:4%;
 }
 select{
+    font-family: 'RixInooAriDuriR';
     background-color: #f5f5dc;
     border: none;
     color: #6F263D;
@@ -40,6 +41,7 @@ select{
     border-radius: 50px;
     display: inline-block;
     cursor: pointer;
+    font-size: 200%;
 }
 select#day{
     width: 20%;
@@ -72,21 +74,44 @@ header{
     height: 30%;
     font-size: 50px;
 }
-/* 반응형 */
-@media (max-width: 500px) {
+
+@media (min-width: 768px) {
+    /* 데스크탑에 적용될 스타일 */
     #menu {
         display: inline-block;
         width: 30%;
+        height: 100%;
     }
     #name {
         display: inline-block;
         width: 30%;
+        height: 100%;
     }
     #sel {
         display: inline-block;
         width: 30%;
+        height: 100%;
+        
     }
-    *{
-        background-color: aqua;
+    select{
+        background-color: #f5f5dc;
+        border: none;
+        color: #6F263D;
+        width: 20%;
+        height: 80px;
+        padding: 1%;
+        vertical-align: center;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 50px;
+        display: inline-block;
+        cursor: pointer;
+        font-size: 150%;
+    }
+    select#day{
+        width: 30%;
+    }
+    img.menu{
+        width:5%;
     }
   }
