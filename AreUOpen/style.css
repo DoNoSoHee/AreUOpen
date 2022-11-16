@@ -28,7 +28,7 @@ img.menu{
 select{
     background-color: #f5f5dc;
     border: none;
-    color: black;
+    color: #6F263D;
     /* padding: 20px 20px; */
     /* padding: 10%;
     margin: 1%; */
@@ -73,13 +73,20 @@ header{
     font-size: 50px;
 }
 /* 반응형 */
-@media (min-width: 500px) {
-    /* #middle {
+@media (max-width: 500px) {
+    #menu {
         display: inline-block;
         width: 30%;
     }
-    #right {
+    #name {
         display: inline-block;
         width: 30%;
-    } */
+    }
+    #sel {
+        display: inline-block;
+        width: 30%;
+    }
+    *{
+        background-color: aqua;
+    }
   }
